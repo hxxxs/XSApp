@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		189ABBF8244445A6004B50AE /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ABBF7244445A6004B50AE /* AppViewController.swift */; };
 		18A6E1D824443C6B004D154B /* AppBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 18A6E1D624443C6B004D154B /* AppBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		18A6E1DF24443C82004D154B /* AppExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6E1DE24443C82004D154B /* AppExtension.swift */; };
 		18A6E1E124443C8B004D154B /* AppConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6E1E024443C8B004D154B /* AppConst.swift */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		189ABBF7244445A6004B50AE /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		18A6E1D324443C6B004D154B /* AppBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A6E1D624443C6B004D154B /* AppBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppBase.h; sourceTree = "<group>"; };
 		18A6E1D724443C6B004D154B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				18A6E1E024443C8B004D154B /* AppConst.swift */,
 				18A6E1DE24443C82004D154B /* AppExtension.swift */,
 				18A6E1E424443DDC004D154B /* AppCountdownButton.swift */,
+				189ABBF7244445A6004B50AE /* AppViewController.swift */,
 				18A6E1D724443C6B004D154B /* Info.plist */,
 			);
 			path = AppBase;
@@ -143,6 +146,7 @@
 			files = (
 				18A6E1DF24443C82004D154B /* AppExtension.swift in Sources */,
 				18A6E1E524443DDC004D154B /* AppCountdownButton.swift in Sources */,
+				189ABBF8244445A6004B50AE /* AppViewController.swift in Sources */,
 				18A6E1E124443C8B004D154B /* AppConst.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,18 +8,18 @@
 
 import UIKit
 
-public class AppCountdownButton: UIButton {
+open class AppCountdownButton: UIButton {
 
     var timer: Timer?
-    public var countDownTimeInterval: Int = 60
-    public var finshTitle: String = "重新获取"
-    public var changeTitle: String = "s"
+    open var countDownTimeInterval: Int = 60
+    open var finshTitle: String = "重新获取"
+    open var changeTitle: String = "s"
     
     deinit {
-        print("\(classForCoder)" + " 释放")
+        print("\(classForCoder)" + " deinit")
     }
     
-    public override func removeFromSuperview() {
+    open override func removeFromSuperview() {
         stopCountdown()
         super.removeFromSuperview()
     }
@@ -27,7 +27,7 @@ public class AppCountdownButton: UIButton {
     // MARK: - Timer
     
     /// 倒计时
-    @objc private func countDown() {
+    @objc func countDown() {
         countDownTimeInterval -= 1
         if countDownTimeInterval == 0 {
             stopCountdown()
@@ -37,7 +37,7 @@ public class AppCountdownButton: UIButton {
     }
     
     /// 开始倒计时
-    public func startCountdown(second: Int = 60) {
+    open func startCountdown(second: Int = 60) {
         timer?.invalidate()
         countDownTimeInterval = second
         timer = Timer(timeInterval: 1.0, target: self, selector: #selector(countDown), userInfo: nil, repeats: true)
@@ -47,7 +47,7 @@ public class AppCountdownButton: UIButton {
     }
     
     /// 倒计时结束
-    public func stopCountdown() {
+    open func stopCountdown() {
         timer?.invalidate()
         timer = nil
         setTitle(finshTitle, for: .normal)
