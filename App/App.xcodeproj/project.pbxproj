@@ -7,19 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		189ABC2F244556C1004B50AE /* XSBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189ABC2E244556C1004B50AE /* XSBase.framework */; };
+		189ABC3924455D8A004B50AE /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ABC3824455D8A004B50AE /* TestViewController.swift */; };
+		189ABC3F24456206004B50AE /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 189ABC3E24456206004B50AE /* iconfont.ttf */; };
 		18A6E151244430BC004D154B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6E150244430BC004D154B /* AppDelegate.swift */; };
 		18A6E153244430BC004D154B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6E152244430BC004D154B /* SceneDelegate.swift */; };
 		18A6E155244430BC004D154B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A6E154244430BC004D154B /* ViewController.swift */; };
 		18A6E15A244430BD004D154B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A6E159244430BD004D154B /* Assets.xcassets */; };
 		18A6E15D244430BD004D154B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A6E15B244430BD004D154B /* LaunchScreen.storyboard */; };
-		18A6E1C824443C31004D154B /* AppService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A6E1C724443C31004D154B /* AppService.framework */; };
-		18A6E1E324443CE4004D154B /* AppBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A6E1E224443CE4004D154B /* AppBase.framework */; };
 		18A6E1E724443F63004D154B /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 18A6E1E624443F63004D154B /* .swiftlint.yml */; };
 		18A6E1E9244442E5004D154B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A6E1E8244442E5004D154B /* Main.storyboard */; };
 		314574BC2ADEFF057172D728 /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67E28C08FCEA8A55A542492 /* Pods_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		189ABC17244552B2004B50AE /* libAppCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAppCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		189ABC2E244556C1004B50AE /* XSBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XSBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		189ABC3824455D8A004B50AE /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		189ABC3E24456206004B50AE /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		18A6E14D244430BC004D154B /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A6E150244430BC004D154B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18A6E152244430BC004D154B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,8 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18A6E1E324443CE4004D154B /* AppBase.framework in Frameworks */,
-				18A6E1C824443C31004D154B /* AppService.framework in Frameworks */,
+				189ABC2F244556C1004B50AE /* XSBase.framework in Frameworks */,
 				314574BC2ADEFF057172D728 /* Pods_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,9 +77,11 @@
 		18A6E14F244430BC004D154B /* App */ = {
 			isa = PBXGroup;
 			children = (
+				189ABC3E24456206004B50AE /* iconfont.ttf */,
 				18A6E150244430BC004D154B /* AppDelegate.swift */,
 				18A6E152244430BC004D154B /* SceneDelegate.swift */,
 				18A6E154244430BC004D154B /* ViewController.swift */,
+				189ABC3824455D8A004B50AE /* TestViewController.swift */,
 				18A6E1E8244442E5004D154B /* Main.storyboard */,
 				18A6E159244430BD004D154B /* Assets.xcassets */,
 				18A6E15B244430BD004D154B /* LaunchScreen.storyboard */,
@@ -87,6 +93,8 @@
 		98D983A9D10E9B9F4115FD67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				189ABC2E244556C1004B50AE /* XSBase.framework */,
+				189ABC17244552B2004B50AE /* libAppCore.a */,
 				18A6E1E224443CE4004D154B /* AppBase.framework */,
 				18A6E1C724443C31004D154B /* AppService.framework */,
 				18A6E179244433CD004D154B /* Base.framework */,
@@ -167,6 +175,7 @@
 				18A6E1E9244442E5004D154B /* Main.storyboard in Resources */,
 				18A6E1E724443F63004D154B /* .swiftlint.yml in Resources */,
 				18A6E15D244430BD004D154B /* LaunchScreen.storyboard in Resources */,
+				189ABC3F24456206004B50AE /* iconfont.ttf in Resources */,
 				18A6E15A244430BD004D154B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +231,7 @@
 			files = (
 				18A6E155244430BC004D154B /* ViewController.swift in Sources */,
 				18A6E151244430BC004D154B /* AppDelegate.swift in Sources */,
+				189ABC3924455D8A004B50AE /* TestViewController.swift in Sources */,
 				18A6E153244430BC004D154B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,8 +1,8 @@
 //
-//  AppExtension.swift
-//  AppBase
+//  XSExtension.swift
+//  XSBase
 //
-//  Created by LL on 2020/4/13.
+//  Created by LL on 2020/4/14.
 //  Copyright © 2020 hxxxs. All rights reserved.
 //
 
@@ -869,4 +869,3 @@ public extension CALayer {
         }
     }
 }
-

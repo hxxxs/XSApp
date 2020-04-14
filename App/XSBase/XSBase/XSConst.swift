@@ -1,8 +1,8 @@
 //
-//  AppConst.swift
-//  AppBase
+//  XSConst.swift
+//  XSBase
 //
-//  Created by LL on 2020/4/13.
+//  Created by LL on 2020/4/14.
 //  Copyright © 2020 hxxxs. All rights reserved.
 //
 
@@ -13,7 +13,7 @@ public let wScreen = UIScreen.main.bounds.width
 /// 屏幕高
 public let hScreen = UIScreen.main.bounds.height
 /// 状态栏高度
-public let hStatusBar = UIApplication.shared.statusBarFrame.height
+public let hStatusBar = UIApplication.shared.windows.first?.windowScene?.statusBarManager?.statusBarFrame.height ?? 20
 
 let Zodiacs = ["鼠", "牛", "虎", "兔", "龙", "蛇",
                "马", "羊", "猴", "鸡", "狗", "猪"]
@@ -30,3 +30,10 @@ let Days = ["初一", "初二", "初三", "初四", "初五",
             "十六", "十七", "十八", "十九", "二十",
             "廿一", "廿二", "廿三", "廿四", "廿五",
             "廿六", "廿七", "廿八", "廿九", "三十"]
+
+/// 返回
+public let backTitle = "\u{e612}"
+
+public func IconFont(ofSize size: CGFloat) -> UIFont {
+    return UIFont(name: "iconFont", size: size) ?? UIFont.systemFont(ofSize: size)
+}

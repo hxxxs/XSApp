@@ -20,13 +20,3 @@ target 'App' do
   network_pods
 
 end
-
-# Service
-
-target 'AppService' do
-  
-  project 'AppService/AppService.xcodeproj'
-  
-  network_pods
-  
-end
