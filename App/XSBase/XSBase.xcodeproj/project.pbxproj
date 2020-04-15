@@ -11,6 +11,9 @@
 		189ABC3124455706004B50AE /* XSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ABC3024455706004B50AE /* XSExtension.swift */; };
 		189ABC3324455735004B50AE /* XSConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ABC3224455735004B50AE /* XSConst.swift */; };
 		189ABC3524455809004B50AE /* XSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ABC3424455809004B50AE /* XSViewController.swift */; };
+		189ABC412446DB4B004B50AE /* XSTabbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ABC402446DB4B004B50AE /* XSTabbleViewController.swift */; };
+		189ABC432446E5B4004B50AE /* XSWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189ABC422446E5B4004B50AE /* XSWebViewController.swift */; };
+		D8E160FEF2ABFD1B0B050573 /* Pods_XSBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC92A0B601EC54E8BE18E0AD /* Pods_XSBase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,11 @@
 		189ABC3024455706004B50AE /* XSExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSExtension.swift; sourceTree = "<group>"; };
 		189ABC3224455735004B50AE /* XSConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSConst.swift; sourceTree = "<group>"; };
 		189ABC3424455809004B50AE /* XSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSViewController.swift; sourceTree = "<group>"; };
+		189ABC402446DB4B004B50AE /* XSTabbleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSTabbleViewController.swift; sourceTree = "<group>"; };
+		189ABC422446E5B4004B50AE /* XSWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSWebViewController.swift; sourceTree = "<group>"; };
+		B3E5C387E47EF8E36562F13F /* Pods-XSBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSBase.debug.xcconfig"; path = "Target Support Files/Pods-XSBase/Pods-XSBase.debug.xcconfig"; sourceTree = "<group>"; };
+		BC92A0B601EC54E8BE18E0AD /* Pods_XSBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XSBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E37561300DB54E932CCEA1A4 /* Pods-XSBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSBase.release.xcconfig"; path = "Target Support Files/Pods-XSBase/Pods-XSBase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8E160FEF2ABFD1B0B050573 /* Pods_XSBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +47,8 @@
 			children = (
 				189ABC25244556B2004B50AE /* XSBase */,
 				189ABC24244556B2004B50AE /* Products */,
+				EDEE0F4AF0C3BB01A388AC1D /* Pods */,
+				BFAC798633B78D7D44D63C6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +67,29 @@
 				189ABC3224455735004B50AE /* XSConst.swift */,
 				189ABC3024455706004B50AE /* XSExtension.swift */,
 				189ABC3424455809004B50AE /* XSViewController.swift */,
+				189ABC422446E5B4004B50AE /* XSWebViewController.swift */,
+				189ABC402446DB4B004B50AE /* XSTabbleViewController.swift */,
 				189ABC27244556B2004B50AE /* Info.plist */,
 			);
 			path = XSBase;
+			sourceTree = "<group>";
+		};
+		BFAC798633B78D7D44D63C6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC92A0B601EC54E8BE18E0AD /* Pods_XSBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDEE0F4AF0C3BB01A388AC1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3E5C387E47EF8E36562F13F /* Pods-XSBase.debug.xcconfig */,
+				E37561300DB54E932CCEA1A4 /* Pods-XSBase.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,6 +110,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 189ABC2B244556B2004B50AE /* Build configuration list for PBXNativeTarget "XSBase" */;
 			buildPhases = (
+				6DB99A836A964367674D6FF0 /* [CP] Check Pods Manifest.lock */,
 				189ABC1E244556B2004B50AE /* Headers */,
 				189ABC1F244556B2004B50AE /* Sources */,
 				189ABC20244556B2004B50AE /* Frameworks */,
@@ -136,6 +168,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6DB99A836A964367674D6FF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XSBase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		189ABC1F244556B2004B50AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -144,6 +201,8 @@
 				189ABC3524455809004B50AE /* XSViewController.swift in Sources */,
 				189ABC3324455735004B50AE /* XSConst.swift in Sources */,
 				189ABC3124455706004B50AE /* XSExtension.swift in Sources */,
+				189ABC432446E5B4004B50AE /* XSWebViewController.swift in Sources */,
+				189ABC412446DB4B004B50AE /* XSTabbleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +331,7 @@
 		};
 		189ABC2C244556B2004B50AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E5C387E47EF8E36562F13F /* Pods-XSBase.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +358,7 @@
 		};
 		189ABC2D244556B2004B50AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E37561300DB54E932CCEA1A4 /* Pods-XSBase.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

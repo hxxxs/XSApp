@@ -297,6 +297,12 @@ public extension Float {
 
 // MARK: - UIKit Extension
 
+public extension UIFont {
+    static func iconFont(ofSize size: CGFloat) -> UIFont {
+        return UIFont(name: "iconFont", size: size) ?? UIFont.systemFont(ofSize: size)
+    }
+}
+
 public extension CGFloat {
     
     /// 以 iPhone 6 的屏幕为基准计算水平方向值

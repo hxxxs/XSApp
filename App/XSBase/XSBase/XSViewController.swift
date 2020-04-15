@@ -7,17 +7,15 @@
 //
 
 import UIKit
+import RxSwift
 
 open class XSViewController: UIViewController {
 
     //  MARK: - Properties
     
-    private lazy var customStatusBar: UIView = {
-        let v = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: hStatusBar))
-        v.backgroundColor = UIColor.white
-        return v
-    }()
+    open lazy var disposeBag = DisposeBag()
     
+    /// 导航条
     open lazy var navBar: UINavigationBar = {
         view.insertSubview(customStatusBar, at: 0)
         
@@ -39,18 +37,26 @@ open class XSViewController: UIViewController {
     /// 自定义导航条目
     open lazy var navItem = UINavigationItem()
     
-    /// 返回控件
-    private lazy var backItem:UIBarButtonItem = {
-        let btn = UIButton(title: backTitle, titleColor: .darkGray, font: IconFont(ofSize: 18), target: self, action: #selector(goBack), type: .custom)
-        return UIBarButtonItem(customView: btn)
-    }()
-    
+    /// 导航条背景颜色
     open var navBarBackgroundColor: UIColor = UIColor.white {
         didSet {
             customStatusBar.backgroundColor = navBarBackgroundColor
             navBar.setBackgroundImage(UIImage.create(color: navBarBackgroundColor), for: UIBarMetrics.default)
         }
     }
+    
+    /// 自定义状态栏
+    private lazy var customStatusBar: UIView = {
+        let v = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: hStatusBar))
+        v.backgroundColor = UIColor.white
+        return v
+    }()
+    
+    /// 返回控件
+    private lazy var backItem:UIBarButtonItem = {
+        let btn = UIButton(title: backTitle, titleColor: .darkGray, font: UIFont.iconFont(ofSize: 18), target: self, action: #selector(goBack), type: .custom)
+        return UIBarButtonItem(customView: btn)
+    }()
     
     //  MARK: - LifeCycle
     

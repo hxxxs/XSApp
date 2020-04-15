@@ -7,6 +7,8 @@ workspace 'App.xcworkspace'
 def project_pods
   pod 'SnapKit'
   pod 'SwiftLint'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 end
 
 def network_pods
@@ -19,4 +21,11 @@ target 'App' do
   project_pods
   network_pods
 
+end
+
+target 'XSBase' do
+  
+  project 'XSBase/XSBase.xcodeproj'
+  
+  project_pods
 end

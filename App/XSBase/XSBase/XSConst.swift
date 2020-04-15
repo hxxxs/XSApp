@@ -33,7 +33,3 @@ let Days = ["初一", "初二", "初三", "初四", "初五",
 
 /// 返回
 public let backTitle = "\u{e612}"
-
-public func IconFont(ofSize size: CGFloat) -> UIFont {
-    return UIFont(name: "iconFont", size: size) ?? UIFont.systemFont(ofSize: size)
-}
